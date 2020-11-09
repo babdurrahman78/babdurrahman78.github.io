@@ -1,0 +1,101 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    color: #4E5150;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.row{
+    display: flex;
+}
+.data{
+    font-size: 14px;
+    text-align: center;   
+}
+.profile{
+    width: 350px;
+    margin: 30px auto;
+    padding: 10px;
+}
+.profile .image img{
+    display: block;
+    width: 50%;
+    margin: 15px auto ;
+    border-radius: 60px;
+}
+.profile .name{
+    margin: 5px 0px;
+    font-size: 24px;   
+}
+.profile .desc{
+    color: #A9A9A9;
+}
+.profile .row .box{
+    width: 30%;
+    margin: 20px 10px;
+    padding: 10px;
+    background-color: #E5E5E5;
+    border-radius: 10px;
+}
+.profile .box .number{
+    font-size: 18px;
+    text-align: center;
+}
+.gallery{
+    width: 50%;
+    margin: 0px auto 50px;
+    padding: 10px;
+    min-width: 360px;
+}
+.gallery .row{
+    width: 100%;
+}
+.gallery .foto{
+    margin: 0 20px 20px 0;
+}
+.gallery img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.gallery .row .flex-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.in{
+    margin: 0px 0px 20px 0px;
+}
+
+.inin{
+    margin-right: 20px;
+}
+.footer .copyright{
+    color: #A9A9A9;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 14px;
+}
+@media only screen and (max-width: 600px) {
+    .profile{
+        margin: 20px auto;
+    }
+    .gallery{
+        margin-bottom: 30px;
+    }
+    .footer .copyright{
+        margin-bottom: 30px;
+    }
+  }
+@media only screen and (max-width: 500px) {
+    .profile{
+        margin: 10px auto;
+    }
+    .gallery{
+        margin-bottom: 10px;
+    }
+    .footer .copyright{
+        margin-bottom: 20px;
+    }
+  }
