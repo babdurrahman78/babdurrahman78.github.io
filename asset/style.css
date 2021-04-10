@@ -61,6 +61,7 @@ header{
 }
 .project .pic1{
 	display: flex;
+	margin: 15px 0;
 }
 
 .project .pic1 .image{
@@ -87,6 +88,15 @@ header{
 .project .pic1 .image:hover .text a{
 	color: rgb(56,154,226);
 }
+
+.project .pic1 .image .text .info{
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;  
+	overflow: hidden;
+}
+
 .contact{
 	color: white;
 	width: 100%;
