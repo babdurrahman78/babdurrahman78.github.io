@@ -1,325 +1,336 @@
-
-*{
-	margin: 0;
-	padding: 0;
-	transition: all .5s;
+* {
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s;
 }
-html{
-	scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
-	font-family: 'Bree Serif', serif;
+body {
+  font-family: "Bree Serif", serif;
 }
-header{
-	position: sticky;
-	top: 0;
-	z-index: 99;
+header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
 }
-.bg-dark{
-	background: rgb(56,154,226);
-	background: linear-gradient(90deg, rgba(56,154,226,1) 41%, rgba(0,211,255,1) 100%) !important;
+.bg-dark {
+  background: rgb(56, 154, 226);
+  background: linear-gradient(
+    90deg,
+    rgba(56, 154, 226, 1) 41%,
+    rgba(0, 211, 255, 1) 100%
+  ) !important;
 }
-.about{
-	padding: 70px;
-	width: 100%;
-	height: 570px;
-	background: rgb(56,154,226);
-	background: linear-gradient(90deg, rgba(56,154,226,1) 41%, rgba(0,211,255,1) 100%);
+.about {
+  padding: 70px;
+  width: 100%;
+  height: 570px;
+  background: rgb(56, 154, 226);
+  background: linear-gradient(
+    90deg,
+    rgba(56, 154, 226, 1) 41%,
+    rgba(0, 211, 255, 1) 100%
+  );
 }
-.about .container{
-	margin: auto;
-	width:70%;
-	color: white; 
+.about .container {
+  margin: auto;
+  width: 70%;
+  color: white;
 }
-.about .container h1{
-	font-size: 60px;
+.about .container h1 {
+  font-size: 60px;
 }
-.project{
-	color: #333;
-	margin-bottom: 100px;
+.project {
+  color: #333;
+  margin-bottom: 100px;
 }
-.left , .right{
-	flex-basis: 50%;
-}
-
-.tag{
-	display: flex;
-}
-.project .tag .left{
-}
-.project .tag .left h2{
-	margin-top: 70px;
-	text-align: right;
-	margin-right: 32px;
-}
-.project .tag .right p{
-	width: 30%;
-	margin-top: 70px;
-	text-align: left;
-	margin-left: 32px;
-	color: grey;
-}
-.project .pic1{
-	display: flex;
-	margin: 15px 0;
+.left,
+.right {
+  flex-basis: 50%;
 }
 
-.project .pic1 .image{
-	width: 90%;
-	margin: auto;
-	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px; 
+.tag {
+  display: flex;
 }
-.project .pic1 .image:hover{
-	transform: scale(1.05, 1.05);
+.project .tag .left {
 }
-.project .pic1 .image img{
-	width: 100%;
-	cursor: pointer;
+.project .tag .left h2 {
+  margin-top: 70px;
+  text-align: right;
+  margin-right: 32px;
 }
-.project .pic1 .image .text{
-	padding: 15px;
+.project .tag .right p {
+  width: 30%;
+  margin-top: 70px;
+  text-align: left;
+  margin-left: 32px;
+  color: grey;
 }
-.project .pic1 .image .text a{
-	text-decoration: none;
-	color: #333
-}
-.project .pic1 .image:hover .text a{
-	color: rgb(56,154,226);
+.project .pic1 {
+  display: flex;
+  margin: 15px 0;
 }
 
-.project .pic1 .image .text .info{
-	text-overflow: ellipsis;
-	display: -webkit-box;
-	-webkit-line-clamp: 3;
-	-webkit-box-orient: vertical;  
-	overflow: hidden;
+.project .pic1 .image {
+  width: 90%;
+  margin: auto;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.project .pic1 .image:hover {
+  transform: scale(1.05, 1.05);
+}
+.project .pic1 .image img {
+  width: 100%;
+  cursor: pointer;
+}
+.project .pic1 .image .text {
+  padding: 15px;
+}
+.project .pic1 .image .text a {
+  text-decoration: none;
+  color: #333;
+}
+.project .pic1 .image:hover .text a {
+  color: rgb(56, 154, 226);
 }
 
-.contact{
-	color: white;
-	width: 100%;
-	height:400px;
-	background: rgb(56,154,226);
-	background: linear-gradient(90deg, rgba(56,154,226,1) 41%, rgba(0,211,255,1) 100%);
-}
-.contact .footer{
-	display: flex;
-	margin: auto;
-	width: 50%;
-}
-.contact .footer .studies, .contact .footer .socmed{
-	margin-top: 50px; 
-}
-.contact .footer .studies{
-	flex-basis: 50%;
-}
-.contact .footer .studies .desc{
-	width: 70%;
-	margin: auto;
-}
-.contact .footer .studies .desc h1{
-	text-align: center;
-}
-.contact .footer .studies ul{
-	margin-left: 20px;
-	list-style-type: none; 
-}
-.contact .footer .socmed{
-	flex-basis: 50%;
-}
-.contact .footer .socmed h1{
-	text-align: center;
-}
-.contact .footer .socmed .logo{
-	width: 68%;
-	margin: auto;
-}
-.fa{
-	padding: 20px;
-	font-size: 30px;
-	width: 70px;
-	text-align: center;
-	text-decoration: none;
-	margin: 5px 2px;
-	color: white;
-}
-.fa:hover{
-	text-decoration: none;
-	transform: scale(1.2, 1.2);
-	color: white;
-}
-.contact .footer .socmed .cv{
-	display: block;
-	margin: 30px auto 0;
-	width: 100px;
-	border-radius: 20px;
-	text-align: center;
-	color: white;
-	border: 3px solid white;
+.project .pic1 .image .text .info {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-.contact .footer .socmed .cv:hover{
-	text-decoration: none;
-	color: rgb(56,154,226);
-	background-color: white;
-	transform: scale(1.2, 1.2);
+.contact {
+  color: white;
+  width: 100%;
+  height: 400px;
+  background: rgb(56, 154, 226);
+  background: linear-gradient(
+    90deg,
+    rgba(56, 154, 226, 1) 41%,
+    rgba(0, 211, 255, 1) 100%
+  );
+}
+.contact .footer {
+  display: flex;
+  margin: auto;
+  width: 50%;
+}
+.contact .footer .studies,
+.contact .footer .socmed {
+  margin-top: 50px;
+}
+.contact .footer .studies {
+  flex-basis: 50%;
+}
+.contact .footer .studies .desc {
+  width: 70%;
+  margin: auto;
+}
+.contact .footer .studies .desc h1 {
+  text-align: center;
+}
+.contact .footer .studies ul {
+  margin-left: 20px;
+  list-style-type: none;
+}
+.contact .footer .socmed {
+  flex-basis: 50%;
+}
+.contact .footer .socmed h1 {
+  text-align: center;
+}
+.contact .footer .socmed .logo {
+  width: 68%;
+  margin: auto;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: white;
+}
+.fa:hover {
+  text-decoration: none;
+  transform: scale(1.2, 1.2);
+  color: white;
+}
+.contact .footer .socmed .email {
+  display: block;
+  margin: 30px auto 0;
+  width: 200px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  border: 3px solid white;
 }
 
-@media only screen and (max-width: 1200px){
-	.about .container h1{
-		font-size: 50px;
-	}
-	.project .tag .right p{
-		width: 40%;
-	}
-	.contact .footer{
-		width: 60%;
-	}
+.contact .footer .socmed .email:hover {
+  text-decoration: none;
+  color: rgb(56, 154, 226);
+  background-color: white;
+  transform: scale(1.2, 1.2);
 }
-@media only screen and (max-width: 1100px){
-	.contact .footer{
-		width: 70%;
-	}
-}
-@media only screen and (max-width: 980px){
-	.about .container{
-		width: 90%;
-	}
-	.project .tag .right p{
-		width: 50%;
-	}
-	.contact .footer{
-		width: 80%;
-	}
-	.contact .footer .socmed .logo{
-		width: 65%;
-	}
-}
-@media only screen and (max-width: 870px){
-	.contact .footer .socmed .logo{
-		width: 68%;
-	}
-}
-@media only screen and (max-width: 850px){
-	.about{
-		height: 470px;
-	}
-	.about .container h1{
-		font-size: 40px;
-	}
-	.contact .footer{
-		width: 90%;
-	}
-	.contact .footer .socmed .logo{
-		width: 69%;
-	}
-	
-}
-@media only screen and (max-width: 725px){
-	.about{
-		height: 400px;
-	}
-	.about .container{
-		width: 100%;
-	}
-	.about .container h1{
-		font-size: 35px;
-	}
-	.project .tag .right p{
-		width: 60%;
-	}
-	.project .
-	1{
-		flex-direction: column;
-	}
-	.contact .footer{
-		width: 100%;
-	}
-}
-@media only screen and (max-width: 670px){
-	.contact .footer .socmed .logo{
-		width: 70%;
-	}
-}
-@media only screen and (max-width: 650px){
-	.contact .footer .socmed .logo{
-		width: 73%;
-	}
-}
-@media only screen and (max-width: 630px){
-	.contact .footer .socmed .logo{
-		width: 77%;
-	}
-}
-@media only screen and (max-width: 590px){
-	.contact .footer .socmed .logo{
-		width: 80%;
-	}
-}
-@media only screen and (max-width: 550px){
-	.about .container h1{
-		font-size: 30px;
-	}
-	.contact .footer .socmed .logo{
-		width: 85%;
-	}
-	.contact{
-		height: auto;
-	}
-}
-@media only screen and (max-width: 525px){
-	.contact .footer{
-		flex-direction: column;
-	}
-	.contact .footer .studies .desc{
-		width: 100%;
-	}
-	.contact .footer .socmed .logo{
-		width: 45%;
-	}
-	.contact .footer .socmed .cv{
-		margin-bottom: 40px;
-	}
-}
-@media only screen and (max-width: 500px){
-	.about{
-		height: 350px;
-	}
-	.contact .footer .socmed .logo{
-		width: 48%;
-	}
-}
-@media only screen and (max-width: 500px){
-	.contact .footer .socmed .logo{
-		width: 50%;
-	}
-}
-@media only screen and (max-width: 450px){
-	.about{
-		padding: 30px;
-	}
-	.about .container h1{
-		font-size: 25px;
-	}
-	.contact .footer .socmed .logo{
-		width: 56%;
-	}
 
+@media only screen and (max-width: 1200px) {
+  .about .container h1 {
+    font-size: 50px;
+  }
+  .project .tag .right p {
+    width: 40%;
+  }
+  .contact .footer {
+    width: 60%;
+  }
 }
-@media only screen and (max-width: 410px){
-	.contact .footer .socmed .logo{
-		width: 60%;
-	}
+@media only screen and (max-width: 1100px) {
+  .contact .footer {
+    width: 70%;
+  }
 }
-@media only screen and (max-width: 380px){
-	.contact .footer .socmed .logo{
-		width: 65%;
-	}
+@media only screen and (max-width: 980px) {
+  .about .container {
+    width: 90%;
+  }
+  .project .tag .right p {
+    width: 50%;
+  }
+  .contact .footer {
+    width: 80%;
+  }
+  .contact .footer .socmed .logo {
+    width: 65%;
+  }
 }
-@media only screen and (max-width: 360px){
-	.contact .footer .socmed .logo{
-		width: 70%;
-	}
+@media only screen and (max-width: 870px) {
+  .contact .footer .socmed .logo {
+    width: 68%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .about {
+    height: 470px;
+  }
+  .about .container h1 {
+    font-size: 40px;
+  }
+  .contact .footer {
+    width: 90%;
+  }
+  .contact .footer .socmed .logo {
+    width: 69%;
+  }
+}
+@media only screen and (max-width: 725px) {
+  .about {
+    height: 400px;
+  }
+  .about .container {
+    width: 100%;
+  }
+  .about .container h1 {
+    font-size: 35px;
+  }
+  .project .tag .right p {
+    width: 60%;
+  }
+  .project .pic1 {
+    flex-direction: column;
+  }
+  .contact .footer {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .contact .footer .socmed .logo {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .contact .footer .socmed .logo {
+    width: 73%;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .contact .footer .socmed .logo {
+    width: 77%;
+  }
+}
+@media only screen and (max-width: 590px) {
+  .contact .footer .socmed .logo {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .about .container h1 {
+    font-size: 30px;
+  }
+  .contact .footer .socmed .logo {
+    width: 85%;
+  }
+  .contact {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 525px) {
+  .contact .footer {
+    flex-direction: column;
+  }
+  .contact .footer .studies .desc {
+    width: 100%;
+  }
+  .contact .footer .socmed .logo {
+    width: 45%;
+  }
+  .contact .footer .socmed .email {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .about {
+    height: 350px;
+  }
+  .contact .footer .socmed .logo {
+    width: 48%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .contact .footer .socmed .logo {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .about {
+    padding: 30px;
+  }
+  .about .container h1 {
+    font-size: 25px;
+  }
+  .contact .footer .socmed .logo {
+    width: 56%;
+  }
+}
+@media only screen and (max-width: 410px) {
+  .contact .footer .socmed .logo {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .contact .footer .socmed .logo {
+    width: 65%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .contact .footer .socmed .logo {
+    width: 70%;
+  }
 }
