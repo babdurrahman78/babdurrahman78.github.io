@@ -27,3 +27,4 @@ $(document).ready(function () {
 
 // iseng gan
 // iseng lagi gan
+// iseg terus gan
