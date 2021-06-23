@@ -24,3 +24,7 @@ $(document).ready(function () {
     } // End if
   });
 });
+
+// iseng gan
+// iseng lagi gan
+// iseg terus gan
